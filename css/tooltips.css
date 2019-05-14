@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* New Tooltip for Test Catalog*/
+
+/* Modal Content */
+.tooltip {
+  z-index: 0 !important;
+}
+.tooltip-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none; /* Hidden by default */
+  padding-top: 100px; /* Location of the box */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  overflow: hidden;
+}
+.tooltip-modal .modal-content {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 -2px 3px #ccc;
+  color: #444;
+  font-size: 13px;
+  padding: 10px;
+  position: fixed;
+  left: 35%;
+  right: 35%;
+  top: 30%;
+  margin-right: 20px;
+  text-align: left;
+}
+.modal-content .tooltip img {
+  position: absolute;
+  padding: 4px 0 0 8px;
+  z-index: 100;
+  vertical-align: middle;
+}
+.modal-conten p {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+/* The Close Button */
+.tooltip-modal .close {
+  background-image: url('../images/siteframework/close-btn.gif');
+  background-repeat: no-repeat;
+  padding: 10px 10px;
+  float: right;
+}
+
+.tooltip-modal .close:hover,
+.tooltip-modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.new-tooltip .tooltip {
+  font-size: 15px;
+  font-weight: normal;
+  position: relative;
+  top: -8px;
+  display: inline-block;
+  margin-left: -16px;
+  opacity: 1;
+}
+.new-tooltip .tooltip:hover img {
+  background-image: none;
+}
+.new-tooltip .tooltip img {
+  padding: 0px 18px;
+  background: none !important;
+}
+.new-tooltip .tooltip span.tooltip-close a {
+  background-image: url('../images/siteframework/close-btn.gif');
+  background-repeat: no-repeat;
+  padding: 10px 10px;
+  float: right;
+}
+.new-tooltip .tooltip span {
+  display: none;
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  bottom: 25px;
+  box-shadow: 0 -2px 3px #ccc;
+  color: #444;
+  font-size: 13px;
+  left: 0;
+  line-height: 22px;
+  margin-left: -90px;
+  width: 325px;
+  padding: 12px;
+  position: absolute;
+  text-align: left;
+  z-index: 0 !important;
+  white-space: normal;
+}
+.form-group .form-subgroup label .tooltip {
+  position: relative;
+}
+
+#pagebody .new-tooltip .tooltip.tooltip-position-text {
+  margin-left: -10px;
+  top: -1px;
+}
+
+#pagebody .new-tooltip .tooltip.email-options-tooltip {
+  margin-left: 10px;
+  top: 2px;
+}
+.new-tooltip .tooltip.email-options-tooltip span {
+  margin-left: -175px;
+}
+
+#pagebody .new-tooltip .tooltip.lp-pla-tooltip-text {
+  margin-left: -12px;
+  top: -2px;
+}
+.columnSelectorWrapper span.new-tooltip {
+  position: absolute;
+  margin-top: -14px;
+}
+span .tooltip i.tooltip-grey-icon {
+  margin-top: 7px;
+  margin-right: 10px;
+  font-size: 26px;
+  color: #75797d;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 961px) {
+  .tooltip-modal .modal-content {
+    left: 10%;
+    right: 10%;
+    top: 30%;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .tooltip-modal .modal-content {
+    left: 3%;
+    right: 3%;
+    top: 22%;
+  }
+}
